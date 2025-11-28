@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PPKN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta name="format-detection" content="telephone=no">
+  		<meta name="author" content="Jungle">
+  		<meta name="keywords" content="SAS Blog, Bootstrap 5, HTML, Website">
+  		<meta name="description" content="SAS Kolaborasi">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  		<link rel="stylesheet" type="text/css" href="css/vendor.css">
+  		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+  		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  		<link
+   			href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    		rel="stylesheet">
+	</head>
+	<body class="is-preload">
+
+		  <!-- svg section --> 
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="user" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38c-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6M432 480H80a31 31 0 0 1-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75c1.94 10.73-.68 21.34-7.18 29.11A31 31 0 0 1 432 480" />
+    </symbol>
+    <symbol id="search" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M456.69 421.39L362.6 327.3a173.8 173.8 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.8 173.8 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3M97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8" />
+    </symbol>
+    <symbol id="cart" viewBox="0 0 512 512">
+      <circle cx="176" cy="416" r="32" fill="currentColor" />
+      <circle cx="400" cy="416" r="32" fill="currentColor" />
+      <path fill="currentColor"
+        d="M456.8 120.78a23.92 23.92 0 0 0-18.56-8.78H133.89l-6.13-34.78A16 16 0 0 0 112 64H48a16 16 0 0 0 0 32h50.58l45.66 258.78A16 16 0 0 0 160 368h256a16 16 0 0 0 0-32H173.42l-5.64-32h241.66A24.07 24.07 0 0 0 433 284.71l28.8-144a24 24 0 0 0-5-19.93" />
+    </symbol>
+    <symbol id="left-arrow" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M10.813 9.281L4.093 16l6.72 6.719l1.406-1.438L7.938 17H28v-2H7.937l4.282-4.281z" />
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
+    </symbol>
+    <symbol id="right-arrow" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M21.188 9.281L19.78 10.72L24.063 15H4v2h20.063l-4.282 4.281l1.407 1.438L27.905 16z" />
+    </symbol>
+    <symbol id="google" viewBox="0 0 16 16">
+      <path fill="currentColor"
+        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301c1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+    </symbol>
+    <symbol id="share" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M10 3v2H5v14h14v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm7.586 2H13V3h8v8h-2V6.414l-7 7L10.586 12z" />
+    </symbol>
+    <symbol id="play" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M133 440a35.37 35.37 0 0 1-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0 1 35.77.45l247.85 148.36a36 36 0 0 1 0 61l-247.89 148.4A35.5 35.5 0 0 1 133 440" />
+    </symbol>
+    <symbol id="navbar-icon" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7" />
+    </symbol>
+  </svg>
+		 <div class="search-popup">
+    <div class="search-popup-container">
+
+      <form role="search" method="get" class="form-group" action="index.html">
+        <input type="search" id="search-form" class="form-control border-0 border-bottom"
+          placeholder="Type and press enter" value="" name="s">
+        <button type="submit" class="search-submit border-0 position-absolute bg-white"
+          style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
+            <use xlink:href="#search"></use>
+          </svg></button>
+      </form>
+
+      <h5 class="cat-list-title">Browse Categories</h5>
+
+      <ul class="cat-list">
+        <li class="cat-list-item">
+          <a href="sejarah.html" title="sejarah">Sejarah</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="agama.html" title="agama">Pendidikan Agama Katolik</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="PPKN.html" title="PPKN"> Pendidikan Pancasila</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="PKWU.html" title="PKWU">PKWU</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="Informatika.html" title="Informatika">Informatika</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+    <!-- header nav section -->
+  <header id="header" class="fixed-top">
+    <nav id="primary-header" class="navbar bg-white second-header navbar-expand-lg py-lg-4">
+      <div class="container-md justify-content-between d-flex">
+        <a class="navbar-brand" href="index.html">
+        <img src="images/logo there.jpg" alt="logo" width="150">
+        </a>
+        <a>
+          <h2>SAS Kolaborasi</h2>
+        </a>
+        <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+          <svg class=" text-primary" width="60" height="60">
+            <use xlink:href="#navbar-icon"></use>
+          </svg>
+        </button>
+        <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 pt-5 pb-0">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body align-items-center justify-content-end">
+            <ul class="navbar-nav align-items-center mt-1 me-5">
+              <li class="nav-item px-4">
+                <a class="nav-link nav-link-ltr text-uppercase p-0" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link nav-link-ltr text-uppercase p-0" href="about.html">About </a>
+              </li>
+            </ul>
+            <ul class="d-flex list-unstyled justify-content-center align-items-center ms-5 m-lg-0 m-5 text-center me-5">
+              <li class="d-flex align-items-center me-3 nav-icons search-item">
+                <a href="" class="search-button"> <svg class="icon" width="20" height="20">
+                    <use xlink:href="#search"></use>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Diskriminasi Dalam  Pancasila</h1>
+							<p>Pancasila secara tegas menolak diskriminasi, terutama melalui penekanan pada nilai-nilai Sila Kedua (Kemanusiaan yang Adil dan Beradab) dan Sila Kelima (Keadilan Sosial bagi Seluruh Rakyat Indonesia). Diskriminasi bertentangan dengan prinsip martabat manusia dan kesetaraan hak.</p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/gambar1.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Tips Menghindari Diskriminasi </h2>
+              <p>Menjunjung tinggi Hak Asasi Manusia (HAM): Sadar akan hak-hak dasar setiap individu tanpa memandang latar belakang.</p>
+              <p>Meningkatkan jiwa persatuan dan kesatuan: Fokus pada persamaan sebagai sesama manusia dan warga negara Indonesia.</p>
+              <p>Membiasakan diri untuk tidak menilai orang dari penampilan luar atau latar belakangnya: Hindari stereotip dan prasangka.</p>
+              <p>Saling menghormati dan menghargai perbedaan: Mengembangkan sikap toleransi terhadap keberagaman budaya, agama, suku, dan ras.</p>
+              <p>Meningkatkan empati: Memahami dan merasakan perspektif orang lain yang mungkin mengalami diskriminasi.</p>
+              <p>Bijak dalam bermedia sosial: Hindari menyebarkan atau terpengaruh oleh informasi yang memicu kebencian atau diskriminasi. </p>
+						</div>
+						<div class="image">
+							<img src="images/keadilan.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Langkah-langkah Menurunkan Angka Diskriminasi</h2>
+              <p>Edukasi dan sosialisasi nilai-nilai Pancasila: Pendidikan inklusif yang menanamkan nilai-nilai toleransi dan penghormatan terhadap keberagaman sejak dini di semua level pendidikan.</p>
+              <p>Penguatan kerangka hukum: Memastikan adanya undang-undang yang melarang diskriminasi dan memberikan sanksi tegas terhadap pelaku.</p>
+              <p>Penegakan hukum yang konsisten dan adil: Tindakan tegas dari pihak berwenang terhadap tindakan intoleran dan diskriminatif untuk menciptakan rasa keadilan.</p>
+              <p>Mempromosikan dialog antarbudaya dan antaragama: Menciptakan ruang untuk saling berinteraksi dan memahami perbedaan guna mengurangi prasangka.</p>
+              <p>Kebijakan publik yang inklusif: Menerapkan kebijakan yang mempromosikan kesetaraan dan keberagaman di berbagai sektor, termasuk di tempat kerja. </p>
+						</div>
+						<div class="image">
+							<img src="images/keadilan1.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Diskriminasi Menurut Pancasila</h2>
+              <p>Sila Kedua ("Kemanusiaan yang Adil dan Beradab"): Sila ini adalah landasan utama penolakan diskriminasi. Nilai-nilainya menekankan pengakuan martabat manusia, persamaan hak dan kewajiban, serta sikap saling menghormati dan tidak melakukan kekerasan atau perlakuan diskriminatif terhadap sesama manusia.</p>
+              <p>Sila Kelima ("Keadilan Sosial bagi Seluruh Rakyat Indonesia"): Sila ini menuntut perlakuan yang adil dan setara bagi semua warga negara dalam segala aspek kehidupan (ekonomi, sosial, politik), tanpa memandang latar belakang, untuk mencapai masyarakat yang harmonis dan adil.</p>
+						</div>
+						<div class="image">
+							<img src="images/rasis.jpg" alt="" />
+						</div>
+					</section>
+
+        <!-- Five -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Hubungan Dengan Kasus</h2>
+              <p>Peristiwa ledakan di SMAN 72 Jakarta berhubungan erat dengan nilai-nilai Pancasila karena tindakan tersebut melanggar secara mendasar prinsip-prinsip kemanusiaan, persatuan, dan keadilan sosial yang terkandung dalam ideologi negara Indonesia. Insiden ini menyoroti kegagalan dalam penerapan nilai-nilai Pancasila dalam lingkungan sekolah, terutama terkait isu perundungan (bullying) dan kekerasan.</p>
+						</div>
+						<div class="image">
+							<img src="images/sman72.3.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Pelajaran</h2>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="sejarah.html" class="image">
+										<img src="images/sejarah1.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sejarah Diskriminasi</h3>
+										<p>Pendidikan Sejarah.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="agama.html" class="image">
+										<img src="images/agama1	.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Diskriminasi Menurut Katolik</h3>
+										<p>Pendidikan Agama Katolik.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="PPKN.html" class="image">
+										<img src="images/pancasila1.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Diskriminasi Dalam Pancasila</h3>
+										<p>Pendidikan Pancasila.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="index.html#pkwu" class="image">
+										<img src="images/pkwu1.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Produk Nabati Non Pangan</h3>
+										<p>Prakarya Dan Kewirausahaan.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="index.html" class="image">
+										<img src="images/informatika1.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Website Tentang Diskriminasi</h3>
+										<p>Informatika.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+
+					</section>
+
+  <!-- footer section -->
+  <footer id="footer" class="bg-primary">
+    <div class="container-md padding-small">
+      <div class="row flex-wrap justify-content-between">
+        <div class="col-lg-3 col-md-6 pb-3 pb-lg-0 ">
+          <div class="footer-menu">
+            <div class="logo mb-3">
+              <a href="index.html"><img src="images/logo there.jpg" alt="logo" width="250px"></a>
+            </div>
+            <p class="text-white pt-2">Cinta dan Belas Kasih, Integritas, Keberanian dan Ketangguhan, Persatuan, Totalitas, dan Pelayanan.</p>
+            <div class="social-links mt-4">
+              <ul class="d-flex list-unstyled gap-3">
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon text-light fs-4 me-4" icon="ri:facebook-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon text-light fs-4 me-4" icon="ri:twitter-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon text-light fs-4 me-4" icon="ri:pinterest-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon text-light fs-4 me-4" icon="ri:instagram-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon text-light fs-4 me-4" icon="ri:youtube-fill"></iconify-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 pb-3 pb-lg-0 ">
+          <div class="footer-menu text-white">
+            <h6 class="pb-3 text-uppercase  fw-semibold text-white">Quick links</h6>
+            <ul class="menu-list d-flex flex-column list-unstyled" style="font-size: 12px;">
+              <li class="pb-1 text-uppercase">
+                <a href="about.html">About </a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="sejarah.html">Sejarah </a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="agama.html">Agama</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="PPKN.html">Pendidikan Pancasila</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="index.html#pkwu">PKWU</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="index.html">Informatika</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 pb-3 pb-lg-0">
+          <div class="footer-menu text-white">
+            <h6 class=" pb-3 text-uppercase fw-semibold text-white">Kelompok</h6>
+            <ul class="menu-list d-flex flex-column list-unstyled" style="font-size: 12px;">
+              <li class="pb-1 text-uppercase">
+                <a href="#">Aubrey Raphaella</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="#">Katriel Fritzi Tiono </a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="#">Nominous antoen qweendy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 pb-3 pb-lg-0">
+          <div class="footer-menu text-white">
+            <h6 class=" pb-3 text-uppercase fw-semibold text-white">Guru Konsuling</h6>
+            <ul class="menu-list d-flex flex-column list-unstyled" style="font-size: 12px;">
+              <li class="pb-1 text-uppercase">
+                <a href="#">Bu Juju</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="#">Pak Dimas </a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="#">Bu Lusia</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="#">Pak Aryo</a>
+              </li>
+              <li class="pb-1 text-uppercase">
+                <a href="#">Bu Monic</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" bg-primary border-top ">
+      <div class="container-md footer-bottom d-md-flex text-center justify-content-between py-3">
+        <p class="mb-0 text-white">© Kelompok 8-X6. All Right Reserved.</p>
+        <p class="mb-0 text-white"> 
+          <a target="_blank"
+            class=" fw-semibold">Santa Theresia</a></p>
+      </div>
+    </div>
+  </footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
